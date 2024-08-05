@@ -1,0 +1,177 @@
+.js-copyright-year {
+  color: #fff;
+}
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  width: 100%;
+}
+.swiper-slide {
+  margin-right: 50px;
+}
+.swiper-container {
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 10; 
+  width: 30px;
+  height: 30px;
+  color: #000; 
+}
+
+.swiper-button-prev {
+  left: 0px; 
+}
+
+.swiper-button-next {
+  right: 0px; 
+}
+
+.p-skill__contents {
+  position: relative; 
+  overflow: visible; 
+}
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  background: #fff;
+  text-align:center;
+    &__contents {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__img {
+      svg {
+        width:64px;
+        height:64px;
+        margin:8px;
+      }
+    }
+    &__text {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  
+  
+  .fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  
+  @keyframes fadeUpAnime{
+  from {
+  opacity: 0;
+  transform: translateY(100px);
+  }
+  
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+
+
+  svg.windows8 circle {
+    transform-origin: 32px 32px;
+    fill: black;
+    cx: 32px;
+    cy: 8px;
+    r: 3;
+    animation-name: anim-windows8;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+  }
+  svg.windows8 .orbit-1 {
+    animation-delay: 0s;
+  }
+  svg.windows8 .orbit-2 {
+    animation-delay: 240ms;
+  }
+  svg.windows8 .orbit-3 {
+    animation-delay: 480ms;
+  }
+  svg.windows8 .orbit-4 {
+    animation-delay: 720ms;
+  }
+  svg.windows8 .orbit-5 {
+    animation-delay: 960ms;
+  }
+
+  @keyframes anim-windows8 {
+    0% {
+      transform: rotate(225deg);
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+
+    7% {
+      transform: rotate(345deg);
+      animation-timing-function: linear;
+    }
+
+    30% {
+      transform: rotate(455deg);
+      animation-timing-function: ease-in-out;
+    }
+
+    39% {
+      transform: rotate(690deg);
+      animation-timing-function: linear;
+    }
+
+    70% {
+      transform: rotate(815deg);
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+
+    75% {
+      transform: rotate(945deg);
+      animation-timing-function: ease-out;
+    }
+
+    76% {
+      transform: rotate(945deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(945deg);
+      opacity: 0;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .lazyload {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .lazyloaded {
+    opacity: 1;
+  }

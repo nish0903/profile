@@ -1,0 +1,24 @@
+.p-skill {
+  padding: 100px 0;
+  @include respons (sp) {
+    padding: 13.33vw 0;
+  }
+  &__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  &__contents {
+    margin: 0 auto;
+  }
+  &__img {
+    max-width: 250px;
+    width: 100%;
+    @include respons (sp) {
+      margin: 0 auto;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,26 @@
+// foundation
+@import "../scss/foundation/reset";
+@import "../scss/foundation/variables";
+@import "../scss/foundation/common";
+@import "../scss/foundation/mixin";
+@import "../scss/foundation/js";
+
+// layout
+@import "../scss/layout/header";
+@import "../scss/layout/main";
+@import "../scss/layout/footer";
+// object
+// component
+@import "../scss/objectct/component/btn";
+@import "../scss/objectct/component/titile";
+// project
+@import "../scss/objectct/project/kv";
+@import "../scss/objectct/project/about";
+@import "../scss/objectct/project/work";
+@import "../scss/objectct/project/skill";
+@import "../scss/objectct/project/contact";
+
+
+
+// utility
+@import "../scss/objectct/utility/u-display.scss";

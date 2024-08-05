@@ -1,0 +1,13 @@
+.u-display-sp-only {
+  display: none;
+
+  @include respons (sp) {
+    display: block;
+  }
+}
+.u-display-pc-only-flex {
+  display: flex;
+  @include respons (sp) {
+    display: none;
+  }
+}

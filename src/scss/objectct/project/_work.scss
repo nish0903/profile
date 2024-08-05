@@ -1,0 +1,61 @@
+.p-work {
+  padding: 100px 0;
+  @include respons (sp) {
+    padding: 13.33vw 0;
+  }
+  &__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  &__contents {
+    display: flex;
+    gap: 35px 30px;
+    flex-wrap: wrap;
+    @include respons (sp) {
+      flex-direction: column;
+
+    }
+    &__item {
+      width: calc(50% - 15px);
+      @include respons (sp) {
+        width: 100%;
+      }
+    }
+    &__img {
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+      }
+    }
+    &__title {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      @include respons (sp) {
+        font-size: 5.38vw;
+      }
+    }
+    &__text {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      @include respons (sp) {
+        font-size: 4.266vw;
+      }
+    }
+    dl {
+      display: flex;
+      margin-bottom: 10px;
+      dt {
+        min-width: 80px;
+      }
+      dd {
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

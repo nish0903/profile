@@ -1,0 +1,68 @@
+.p-contact {
+  padding: 100px 0;
+  @include respons (sp) {
+    padding: 13.33vw 0;
+  }
+  &__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  &__contents {
+  }
+  &__form {
+    max-width: 600px;
+    margin: 0 auto;
+    &-item {
+      display: flex;
+      margin-bottom: 50px;
+      @include respons (sp) {
+        flex-direction: column;
+      }
+    }
+    &-block {
+      min-width: 180px;
+      padding-top: 5px;
+      @include respons (sp) {
+        margin-bottom:10px;
+      }
+      span {
+        color: $error-color;
+        font-size: 14px;
+      }
+    }
+    &-input {
+      display: inline-block;
+      width: 600px;
+      padding: 10px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      @include respons (sp) {
+      width: 100%;
+      }
+      &--textarea {
+        height: 300px;
+      }
+    }
+    #btn-search {
+      border: 1px solid #000;
+      padding: 5px 10px;
+      margin-left: 30px;
+      @include respons (sp) {
+        width: 100px;
+        margin-left: 0;
+        margin-top: 10px;
+      } 
+    }
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0 30px;
+      input {
+        padding: 10px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+}

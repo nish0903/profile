@@ -1,0 +1,66 @@
+.p-about {
+  padding: 100px 0;
+  @include respons (sp) {
+    padding: 13.33vw 0;
+  }
+  &__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  &__contents {
+    &-area{
+      display: flex;
+      justify-content: space-between;
+      align-items:start;
+      gap: 0 30px;
+      box-sizing: border-box;
+      @include respons (sp) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    }
+    &-text {
+      max-width: 550px;
+      padding-left: 40px;
+      @include respons (sp) {
+        padding-left: 0;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        @include respons (sp) {
+          margin-top: 20px;
+          font-size: 4.26vw;
+        }
+      }
+    }
+    &-list {
+      font-size: 1rem;
+      @include respons (sp) {
+        font-size: 4.26vw;
+      }
+      dl {
+        display: flex;
+        align-items:start;
+        gap: 0 20px;
+        margin-bottom: 10px;
+        dt {
+          font-weight: 600;
+          min-width: 95px;
+        }
+      }
+    }
+    &-img {
+      max-width: 300px;
+      @include respons (sp) {
+        width: 100%;
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+}
